@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "áo phông thỏ",
+      "price": 1200,
+      "image": "laptop.jpg",
+      "desc": "A high performance laptop",
+      "quantity": 10,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "áo nữ",
+      "price": 800,
+      "image": "smartphone.jpg",
+      "desc": "A latest model smartphone",
+      "quantity": 50,
+      "featured": false
+    },
+    {
+      "id": 3,
+      "name": "áo mùa hè",
+      "price": 150,
+      "image": "headphones.jpg",
+      "desc": "Noise-cancelling over-ear headphones",
+      "quantity": 30,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "áo croptop",
+      "price": 200,
+      "image": "smartwatch.jpg",
+      "desc": "A smartwatch with various features",
+      "quantity": 20,
+      "featured": false
+    }
+  ]
+}
