@@ -1,7 +1,7 @@
-require('dotenv').config();
+// require('dotenv').config();
 
-const express = require('express');
-const mongoose = require('mongoose');
+ import express from 'express';
+ import mongoose from 'mongoose';
 import 'dotenv/config'
 
 const app = express()
@@ -11,6 +11,20 @@ const port = process.env.PORT
  mongoose.connect(process.env.CONNECTION_STRING_MONGODB)
     .then(() => console.log('Connected!'));
     app.use(express.json());
+
+
+
+    
+
+
+
+
+
+import routerProduct from './routers/product.router.js'
+
+app.use('/product', routerProduct);
+
+
 
 
 

@@ -1,5 +1,4 @@
-import Product from '../models/product.model.js';
-import Category from '../models/category.model.js';
+import Product from "../models/product.js";
 
 //[GET] /product/category/:id
 export function getProductByCateId(req,res){
@@ -22,17 +21,21 @@ export function index(req, res) {
 
     }
 
-const filter={};
+    const filter={};
     const nameString = req.query.name;
-    if(nameString)  
+    if(nameString) {
         filter.name = nameString
-        Product.find(filter).populate('categoryId')
+    }
+
+    // console.log(filter);
+    Product.find(filter).populate('categoryId')
         .then(data =>{
             res.status(200).json(data);
             })
         .catch(()=>{
             res.status(500).json({message:"Có lỗi khi lấy dữ liệu"});
         })
+       
 }
 //[GET] /product/:id
 export function getById(req, res) {
