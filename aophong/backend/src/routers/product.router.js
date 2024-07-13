@@ -7,8 +7,8 @@ import {index, getById,insert,update,remove,getProductByCateId} from '../control
 router.get('/',index);
 //lấy sản phẩm theo id
 router.get('/:id',getById);
-//thêm mới sản phẩm
-router.post('/',insert)
+// Thêm mới sản phẩm
+router.post('/', insert);
 // sửa sản phẩm
 router.put('/:id',update)
 //xóa sản phẩm
